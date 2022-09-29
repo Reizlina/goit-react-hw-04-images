@@ -1,10 +1,8 @@
-import ImageGalleryItem from 'components/ImageGalleryItem';
+import ImageGalleryItem from '../ImageGalleryItem';
 import PropTypes from 'prop-types';
 import s from './ImageGallery.module.css';
 
-const ImageGallery = props => {
-  const { pictures, onClick } = props;
-
+const ImageGallery = ({ pictures, onClick }) => {
   const galleryItems = pictures.map(
     ({ id, webformatURL, tags, largeImageURL }) => {
       return (
